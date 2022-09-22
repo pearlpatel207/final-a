@@ -162,5 +162,5 @@ def show_exam_result(request, course_id, submission_id):
         {"course":course, "choices":choices,"marks":grade_ob, 
             "total_marks": grade_p, 
             "submission": submission,
-            "grade": int((mark / total_mark) * 100) }
+            "grade": int((grade_ob / grade_p) * 100) }
     )
